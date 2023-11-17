@@ -1,0 +1,363 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1920;
+    max-height: 1080;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/*Section 1 styling*/
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.facilities{
+    position: relative;
+    font-size: 70px;
+    line-height: 70px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gforms{
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    height: 75px;
+    width: 300px;
+    text-decoration: none;
+    background-color:#9e1005;
+    cursor: pointer;
+}
+
+.gforms:hover{
+    text-decoration: none;
+    background-color: #FCCF3B;
+    cursor: pointer;
+}
+#gforms{
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+#gforms:hover{
+    text-decoration: none;
+    color:#9e1005;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/photos/edited/8.png);
+    background-size: cover;
+    color:#9e1005;
+    height: 450px;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #710B03, #9e1005);
+    color: rgb(247, 247, 247);
+}
+
+.brand-title{
+    font-family: sans-serif;
+    color: #FCCF3B;
+    margin: .5rem;
+}
+
+.brand-title .perpetual{
+    max-width: 280px;
+    max-height: 68px;
+    cursor: pointer;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/*Styles of the list*/
+.navbar-links li{
+    list-style: none;
+}
+
+/*Styles of the link*/
+.navbar-links li a{
+    text-decoration: none;
+    color: #FCCF3B;
+    padding: 1rem;
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.navbar-links li a:hover{
+    background: #FCCF3B;
+    color: #710B03;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+/* 3 bar buttons styling to none */
+.toggle-button {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #FCCF3B;
+    border-radius: 10px;
+}
+
+#menustate{
+    height: 10px;
+    width: 100%;
+}
+
+
+/* section2 styling */
+.section2{
+    width: 100%;
+    height: 550px;
+    color: #9e1005;
+}
+.section2 h1{
+    position: relative;
+    left: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 55px;
+}
+
+.departments{
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;   
+}
+
+.departments h2{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+
+.departments li{
+    list-style-type: none;
+    font-size: 15px;
+}
+
+
+
+/* footer styling */
+.footbar{
+    position: relative;
+    background: linear-gradient(to right, #710B03, #9e1005);
+    height: 350px;
+    width: 100%;
+}
+
+.icons{
+    width: 15%;
+    position: relative;
+    top: 30px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.fb{
+    width: 50px;
+    height: 50px;
+}
+.yt{
+    width: 70px;
+    height: 65px;
+}
+
+.ccs-logo{
+    position: relative;
+    top: 25px;
+    left: 3rem;
+    height: 125px;
+    width: 225px;
+}
+
+.address{
+    position: relative;
+    top: 50px;
+}
+.trunkline{
+    position: relative;
+    top: 35px;
+}
+
+.address, .trunkline{
+    position: relative;
+    left: 3rem;  
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+
+
+
+
+/* media query bro */
+@media (max-width: 600px){
+    .toggle-button{
+        display: flex;
+    }
+    #menustate{
+        display: flex;
+        overflow: hidden;
+        opacity: 0;
+        z-index: 1;
+    }
+    .navbar-links ul{
+       display: none;
+       flex-direction: column;
+       align-items: center;
+       width: 100%;
+    }
+
+    #menustate:checked ~ nav :is(ul,.navbar-links){
+        display: flex;
+    }
+
+    .navbar-links li{
+       text-align: center;
+    }
+
+    .navbar-links li a{
+       display: flex;
+       left: -100;
+       text-align: center;
+       padding: .5rem 1rem;
+    }
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .navbar-links li a:hover{
+        background: #FCCF3B;
+        color: #710B03;
+    }
+
+    .section1{
+        height: 300px;       
+    }
+
+    .section4{
+        position: relative;
+    }
+
+
+    .seal{
+        position: relative;
+        display: flex;
+        align-items: center;
+        left: 80px;
+        font-size: 40px;
+        text-align: center;
+    }
+    .perps-descrip{
+        font-size: 15px;
+        position: relative;
+        top: 10px;
+        width: 400px;
+        height: 10000;
+    }
+    .molino-logo{
+        position: relative;
+        top: 25px;
+    }
+
+    .footbar{
+        position: relative;
+        top: 600px;
+    }
+    .icons{
+        width: 30%;
+        position: relative;
+        left: 35px;
+    }
+    .fb{
+        width: 40px;
+        height: 40px;
+    }
+    .yt{
+        width: 60px;
+        height: 50px;
+    }
+    .trunkline,.address{
+        font-size: 15px;
+    }
+    .gforms{
+        width: 200px;
+        height: 50px;
+    }
+    #gforms{
+        font-size: 20px;
+    }
+    .facilities{
+        position: relative;
+        left: 2px;
+        font-size: 40px;
+    }
+    .section2{
+        height: 75px;
+    }
+
+    .section2 h1{
+        position: relative;
+        left: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+    }
+    .departments{
+        width: 450px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .departments h2{
+        font-size: 20px;
+    }
+}

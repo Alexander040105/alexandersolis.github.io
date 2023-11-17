@@ -1,0 +1,486 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/*Section 1 and navbar styling*/
+.section1{
+    display: flex;
+    background-image:url(/photos/edited/ior/7.png);
+    background-size: cover;
+    color:#FCCF3B;
+    height: 450px;
+    width: 100%;
+}
+
+#iotlab1{
+    position: relative;
+    top: 10px;
+    width: 100%;
+    height: 400px;
+}
+
+.learn-more{
+    position: relative;
+    top: 5px;
+    left: 50px;
+    width: 175px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #9e1005;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.learn-more:hover{
+    text-decoration: none;
+    background-color: #FCCF3B;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color:#9e1005;
+    cursor: pointer;
+}
+
+#learn-more{
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+#learn-more:hover{
+    text-decoration: none;
+    color:#9e1005;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.headline{
+    position: relative;
+    top: 15px;
+    left: 50px;
+    font-size: 70px;
+    line-height: 70px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: left;
+}
+
+.subheader{
+    position: relative;
+    top: 5px;
+    left: 50px;
+    font-size: 25px;
+    line-height: 30px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #710B03, #9e1005);
+    color: rgb(247, 247, 247);
+}
+
+.brand-title{
+    color: #FCCF3B;
+    margin: .5rem;
+}
+
+.brand-title .perpetual{
+    max-width: 280px;
+    max-height: 68px;
+    cursor: pointer;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/*Styles of the list*/
+.navbar-links li{
+    list-style: none;
+}
+
+/*Styles of the link*/
+.navbar-links li a{
+    text-decoration: none;
+    color: #FCCF3B;
+    padding: 1rem;
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.navbar-links li a:hover{
+    background: #FCCF3B;
+    color:#9e1005;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 3 bar buttons styling to none */
+.toggle-button {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #FCCF3B;
+    border-radius: 10px;
+}
+
+#menustate{
+    height: 10px;
+    width: 100%;
+}
+
+/*Section 2 stylings*/
+.section2{
+    position: relative;
+    top: 25%;
+    color: #9e1005;
+    background-color: white;
+    height: 130px;
+    width: 100%;
+}
+
+.contents{
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ccs{
+    position: relative;
+    top: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-style: bold;
+}
+
+.csContents{
+    position: relative;
+    width: 400px;
+    height:100px;
+}
+.itContents{
+    position: relative;
+    width: 400px;
+    height:100px;
+}
+
+.cs, .it{
+    font-size: 15px;
+    text-align: justify;
+    line-height: 20px;
+}
+.csHeader, .itHeader{
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+/*Section 3 styling*/
+.section3{
+    position: relative;
+    top: 300%;
+    background: linear-gradient(to right, #710B03, #9e1005);
+    color:white;
+    height: 550px;
+    width: 100%;
+}
+.partners{
+    padding-top: 30px;
+    font-size: 2.75rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: bold;
+}
+
+.banner{
+    position: relative;
+    left: 22%;
+    top: 1px;
+    width: 750px;
+    height: 375px;
+}
+
+
+.banner2{
+    position: relative;
+    left:13%;
+    top: 50px;
+    width: 1000px;
+    height: 200px;
+}
+
+
+
+/* footer/section 4 styling */
+.section4{
+    position: relative;
+    top: 300%;
+    height: 500px;
+    width: 100%;
+}
+
+
+/* footer styling */
+.footbar{
+    position: relative;
+    top: 300%;
+    background: linear-gradient(to right, #710B03, #9e1005);
+    height: 350px;
+    width: 100%;
+ }
+
+ .icons{
+    width: 15%;
+    position: relative;
+    top: 30px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.fb{
+    width: 50px;
+    height: 50px;
+}
+.yt{
+    width: 70px;
+    height: 65px;
+}
+
+/*
+.facebook-link{
+    position: relative;
+    top: 30px;
+    left: 3rem;  
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.facebook{
+    position: relative;
+    top: 45px;
+    left: 3rem;  
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.facebook-link:hover{
+    color: #FCCF3B;
+} */
+
+.ccs-logo{
+    position: relative;
+    top: 25px;
+    left: 3rem;
+    height: 125px;
+    width: 225px;
+}
+
+.address{
+    position: relative;
+    top: 50px;
+}
+.trunkline{
+    position: relative;
+    top: 35px;
+}
+
+.address, .trunkline{
+    position: relative;
+    left: 3rem;  
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+
+
+@media (max-width: 800px){
+    /* navbar resize */
+    .toggle-button{
+        display: flex;
+    }
+    #menustate{
+        display: flex;
+        overflow: hidden;
+        opacity: 0;
+        z-index: 1;
+    }
+    .navbar-links ul{
+       display: none;
+       flex-direction: column;
+       align-items: center;
+       width: 100%;
+    }
+
+    #menustate:checked ~ nav :is(ul,.navbar-links){
+        display: flex;
+    }
+    #menustate:checked ~ div .section1{
+        margin: 100px;
+    }
+    .navbar-links li{
+       text-align: center;
+    }
+
+    .navbar-links li a{
+       display: flex;
+       left: -100;
+       text-align: center;
+       padding: .5rem 1rem;
+    }
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .navbar-links li a:hover{
+        background: #FCCF3B;
+        color: #710B03;
+    }
+
+
+    .section1{
+        height: 300px;
+    }
+    .headline{
+        position: relative;
+        top: 5px;
+        line-height: 40px;
+        font-size: 40px;
+    }
+    .subheader{
+        position: relative;
+        top: 2px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .learn-more{
+        position: relative;
+        top: 10px;
+        width: 125px;
+        font-size: 15px; 
+    }
+
+    .learn-more:hover{
+        font-size: 15px;
+    }
+
+    .section2{
+        height: 200px;
+        
+    }
+    .ccs, .partners{
+        font-size: 35px;
+    }
+    .contents{
+        position: relative;
+        top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .csHeader, .itHeader{
+        font-size: 25px;
+    }
+
+    .itContents{
+        position: relative;
+        top: 300px;
+    }
+    
+    .box1{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .section3{
+        height: 450px;
+    }
+    .section4{
+        height: 450px;
+    }
+    .banner{
+        position: relative;
+        top: 1px;
+        left: 5%;
+        width: 450px;
+        height: 225px;
+    }
+
+    .banner2{
+        position: relative;
+        top: 10px;
+        width: 375px;
+        height: 125px;
+    }
+
+    .icons{
+        width: 30%;
+        position: relative;
+        left: 35px;
+    }
+    .fb{
+        width: 40px;
+        height: 40px;
+    }
+    .yt{
+        width: 60px;
+        height: 50px;
+    }
+    .trunkline,.address{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,672 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1920;
+    max-height: 1080;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+.section0{
+    display: flex;
+    background-image: url(/photos/edited/6.png);
+    background-size: cover;
+    color:white;
+    height: 450px;
+    width: 100%;
+}
+
+.facilities{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 25%;
+    font-size: 70px;
+    line-height: 70px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.section1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color:#9e1005;
+    height: 750px;
+    width: 100%;
+}
+.mac-header{
+    position: relative;
+    font-size: 50px;
+    line-height: 35px;
+    color:#9e1005;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    text-align: center;
+}
+
+.mac-pics{
+    position: relative;
+    top: 10px;
+}
+
+.second-row{
+    position: relative;
+    top: 10px;
+}
+
+.mac1{
+    position: relative;
+    left: 1%;
+    width:  550px;
+    height: 225px;
+}
+
+.mac2{
+    position: relative;
+    left: 2%;
+    width:  550px;
+    height: 225px;
+}
+.mac3{
+    position: relative;
+    left: 1%;
+    width:  350px;
+    height: 250px;
+}
+.mac4{
+    position: relative;
+    left: 2%;
+    width:  750px;
+    height: 250px;
+}
+
+
+
+head{
+    position: fixed;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #710B03, #9e1005);
+    color: rgb(247, 247, 247);
+}
+
+.brand-title{
+    font-family: sans-serif;
+    color: #FCCF3B;
+    margin: .5rem;
+}
+
+.brand-title .perpetual{
+    max-width: 280px;
+    max-height: 68px;
+    cursor: pointer;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/*Styles of the list*/
+.navbar-links li{
+    list-style: none;
+}
+
+/*Styles of the link*/
+.navbar-links li a{
+    text-decoration: none;
+    color: #FCCF3B;
+    padding: 1rem;
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.navbar-links li a:hover{
+    background: #FCCF3B;
+    color: #710B03;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 3 bar buttons styling to none */
+.toggle-button {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #FCCF3B;
+    border-radius: 10px;
+}
+
+#menustate{
+    height: 10px;
+    width: 100%;
+}
+
+
+.section2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#9e1005;
+    color:white;
+    height: 750px;
+    width: 100%;
+}
+
+.iot-header{
+    position: relative;
+    font-size: 50px;
+    line-height: 35px;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    text-align: center;
+}
+
+
+.iot-pics{
+    position: relative;
+    top: 10px;
+}
+
+.second-row2{
+    position: relative;
+    top: 10px;
+}
+
+.iot-pics{
+    position: relative;
+    top: 5px;
+}
+
+.iot1{
+    position: relative;
+    left: 2%;
+    width:  410px;
+    height: 225px;
+}
+
+.iot2{
+    position: relative;
+    left: 3%;
+    width:  355px;
+    height: 225px;
+}
+.iot3{
+    position: relative;
+    left: 1%;
+    width:  325px;
+    height: 225px;
+}
+.iot4{
+    position: relative;
+    left: 5%;
+    width:  315px;
+    height: 250px;
+}
+.iot5{
+    position: relative;
+    left: 6%;
+    width:  650px;
+    height: 250px;
+} 
+
+/* section 2 styling */
+/* .section2{
+    background: linear-gradient(to right, #710B03, #9e1005);
+    height: 750px;
+    width: 100%;
+}
+
+.line2{
+    position: relative;
+    top: 1360px;
+    left: 5%;
+    background-color: white;
+    width: 90%;
+    height: 3px;
+}
+
+.first-row2{
+    position: relative;
+    left: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.second-row2{
+    position: relative;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.iot-header{
+    position: relative;
+    top: 1250px;
+    left: 5%;
+    font-size: 40px;
+    line-height: 70px;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+    text-align: center;
+}
+*/
+
+/* section 3 */
+.section3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+    color:#9e1005;
+    height: 750px;
+    width: 100%;
+}
+
+.comp-header{
+    position: relative;
+    font-size: 50px;
+    line-height: 35px;
+    color:#9e1005;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    text-align: center;
+}
+
+
+.comp-pics{
+    position: relative;
+    top: 10px;
+}
+
+.second-row3{
+    position: relative;
+    top: 10px;
+}
+
+.comp-pics{
+    position: relative;
+    top: 5px;
+}
+
+.comp1{
+    position: relative;
+    left: 1%;
+    width:  525px;
+    height: 225px;
+}
+
+.comp2{
+    position: relative;
+    left: 2%;
+    width:  600px;
+    height: 225px;
+}
+
+.comp4{
+    position: relative;
+    left: 3%;
+    width:  600px;
+    height: 250px;
+}
+.comp5{
+    position: relative;
+    left: 4%;
+    width:  400px;
+    height: 250px;
+} 
+
+
+
+
+/* .section4{
+    position: relative;
+    top: 300%;
+    background-color: white;
+    color:#9e1005;
+    height: 500px;
+    width: 100%;
+} */
+
+
+/* footer styling */
+.footbar{
+    position: relative;
+    background: linear-gradient(to right, #710B03, #9e1005);
+    height: 350px;
+    width: 100%;
+}
+
+
+.icons{
+    width: 15%;
+    position: relative;
+    top: 30px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.fb{
+    width: 50px;
+    height: 50px;
+}
+.yt{
+    width: 70px;
+    height: 65px;
+} 
+
+.ccs-logo{
+    position: relative;
+    top: 25px;
+    left: 3rem;
+    height: 125px;
+    width: 225px;
+}
+
+.address{
+    position: relative;
+    top: 50px;
+}
+.trunkline{
+    position: relative;
+    top: 35px;
+}
+
+.address, .trunkline{
+    position: relative;
+    left: 3rem;  
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+
+
+
+
+@media (max-width: 800px){
+    .toggle-button{
+        display: flex;
+    }
+    #menustate{
+        display: flex;
+        overflow: hidden;
+        opacity: 0;
+        z-index: 1;
+    }
+    .navbar-links ul{
+       display: none;
+       flex-direction: column;
+       align-items: center;
+       width: 100%;
+    }
+
+    #menustate:checked ~ nav :is(ul,.navbar-links){
+        display: flex;
+    }
+
+    .navbar-links li{
+       text-align: center;
+    }
+
+    .navbar-links li a{
+       display: flex;
+       left: -100;
+       text-align: center;
+       padding: .5rem 1rem;
+    }
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .navbar-links li a:hover{
+        background: #FCCF3B;
+        color: #710B03;
+    }
+
+    .section0{
+        height: 300px;       
+    }
+
+    .facilities{
+        position: relative;
+        left: 8%;
+        font-size: 40px;
+    }
+
+    .section1{
+        height: 400px;
+        
+    }
+    
+    .mac-header{
+        font-size: 45px;
+        line-height: 35px;
+        color:#9e1005;
+        font-family: 'Poppins', sans-serif;
+        font-weight:600;
+        text-align: center;
+    }
+    
+    .mac-pics{
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .second-row{
+        position: relative;
+        top: 10px;
+    }
+    
+    .mac1{
+        position: relative;
+        width:  175px;
+        height: 100px;
+    }
+    
+    .mac2{
+        position: relative;
+        width:  175px;
+        height: 100px;
+    }
+    .mac3{
+        position: relative;
+        width:  125px;
+        height: 115px;
+    }
+    .mac4{
+        position: relative;
+        width:  225px;
+        height: 115px;
+    }
+
+
+
+    .section2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:#9e1005;
+        color:white;
+        height: 400px;
+        width: 100%;
+    }
+    
+    .iot-header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        font-size: 35px;
+        line-height: 35px;
+        color:white;
+        font-family: 'Poppins', sans-serif;
+        font-weight:600;
+        text-align: center;
+    }
+    
+    
+    .iot-pics{
+        position: relative;
+    }
+    
+    .second-row2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        top: 10px;
+    }
+
+    .first-row2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .iot-pics{
+        position: relative;
+        top: 5px;
+    }
+    
+    .iot1{
+        position: relative;
+        width:  175px;
+        height: 75px;
+    }
+    
+    .iot2{
+        position: relative;
+        width:  150px;
+        height: 75px;
+    }
+    .iot3{
+        position: relative;
+        width:  125px;
+        height: 75px;
+    }
+    .iot4{
+        position: relative;
+        width:  200px;
+        height: 100px;
+    }
+    .iot5{
+        position: relative;
+        width:  200px;
+        height: 100px;
+    } 
+
+
+    .section3{
+        height: 400px;
+    }
+        
+    .comp-header{
+        font-size: 35px;
+        line-height: 35px;
+        color:#9e1005;
+        font-family: 'Poppins', sans-serif;
+        font-weight:600;
+        text-align: center;
+    }
+
+
+    .comp-pics{
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .second-row3{
+        position: relative;
+        top: 10px;
+    }
+
+    .comp-pics{
+        position: relative;
+        top: 5px;
+    }
+
+    .comp1{
+        position: relative;
+        width:  200px;
+        height: 75px;
+    }
+
+    .comp2{
+        position: relative;
+        width:  200px;
+        height: 75px;
+    }
+
+    .comp4{
+        position: relative;
+        left: 1%;
+        width:  200px;
+        height: 100px;
+    }
+    .comp5{
+        position: relative;
+        left: 1%;
+        width:  205px;
+        height: 100px;
+    } 
+
+    .icons{
+        width: 30%;
+        position: relative;
+        left: 35px;
+    }
+    .fb{
+        width: 40px;
+        height: 40px;
+    }
+    .yt{
+        width: 60px;
+        height: 50px;
+    }
+
+    .trunkline,.address{
+        font-size: 15px;
+    }
+
+
+}

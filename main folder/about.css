@@ -1,0 +1,419 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1920;
+    max-height: 1080;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/*Section 1 styling*/
+
+.facilities{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 22%;
+    font-size: 70px;
+    line-height: 70px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.section1{
+    display: flex;
+    background-image: url(/photos/edited/8.png);
+    background-size: cover;
+    color:#9e1005;
+    height: 450px;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #710B03, #9e1005);
+    color: rgb(247, 247, 247);
+}
+
+.brand-title{
+    font-family: sans-serif;
+    color: #FCCF3B;
+    margin: .5rem;
+}
+
+.brand-title .perpetual{
+    max-width: 280px;
+    max-height: 68px;
+    cursor: pointer;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/*Styles of the list*/
+.navbar-links li{
+    list-style: none;
+}
+
+/*Styles of the link*/
+.navbar-links li a{
+    text-decoration: none;
+    color: #FCCF3B;
+    padding: 1rem;
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.navbar-links li a:hover{
+    background: #FCCF3B;
+    color: #710B03;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+/* 3 bar buttons styling to none */
+.toggle-button {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #FCCF3B;
+    border-radius: 10px;
+}
+
+#menustate{
+    height: 10px;
+    width: 100%;
+}
+.section2{
+    background-color: white;
+    color:#9e1005;
+    height: 450px;
+    width: 100%;
+}
+
+.descrip1{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-around;
+}
+
+.molino-photo{
+    position: relative;
+}
+.molino-descrip{
+    position: relative;
+    width: 50%;
+    font-size: 20px;
+}
+
+.molino{
+    position: relative;
+    left: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-style: bold;
+    font-size: 35px;
+}
+
+
+.section3{
+    background-color: #9e1005;
+    color: white;
+    height: 450px;
+    width: 100%;
+}
+
+.pvm{
+    display: flex;
+    position: relative;
+    top: 25px;
+    align-items: baseline;
+    justify-content: space-evenly;
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+
+.pvm h2{
+    display:flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: bold;
+    font-size: 40px;
+}
+.pvm p{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    width: 350px;
+    font-size: 15px;
+}
+
+.section4{
+    background-color: white;
+    color:#9e1005;
+    height: 450px;
+    width: 100%;
+}
+
+.descrip2{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-around;
+}
+
+.perps-logo{
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+.perps-descrip{
+    position: relative;
+    top: 5px;
+    width: 60%;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.seal{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    left: 6%;
+    font-style: bold;
+    font-size: 45px;
+}
+
+
+
+
+
+/* footer styling */
+.footbar{
+    position: relative;
+    background: linear-gradient(to right, #710B03, #9e1005);
+    height: 350px;
+    width: 100%;
+}
+
+.icons{
+    width: 15%;
+    position: relative;
+    top: 30px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.fb{
+    width: 50px;
+    height: 50px;
+}
+.yt{
+    width: 70px;
+    height: 65px;
+}
+
+
+
+.ccs-logo{
+    position: relative;
+    top: 25px;
+    left: 3rem;
+    height: 125px;
+    width: 225px;
+}
+
+.address{
+    position: relative;
+    top: 50px;
+}
+.trunkline{
+    position: relative;
+    top: 35px;
+}
+
+.address, .trunkline{
+    position: relative;
+    left: 3rem;  
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+
+
+
+
+/* media query bro */
+@media (max-width: 800px){
+    .toggle-button{
+        display: flex;
+    }
+    #menustate{
+        display: flex;
+        overflow: hidden;
+        opacity: 0;
+        z-index: 1;
+    }
+    .navbar-links ul{
+       display: none;
+       flex-direction: column;
+       align-items: center;
+       width: 100%;
+    }
+
+    #menustate:checked ~ nav :is(ul,.navbar-links){
+        display: flex;
+    }
+
+    .navbar-links li{
+       text-align: center;
+    }
+
+    .navbar-links li a{
+       display: flex;
+       left: -100;
+       text-align: center;
+       padding: .5rem 1rem;
+    }
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .navbar-links li a:hover{
+        background: #FCCF3B;
+        color: #710B03;
+    }
+
+    .section1{
+        height: 300px;       
+    }
+
+    .facilities{
+        position: relative;
+        left: 8%;
+        font-size: 40px;
+    }
+
+    .section3{
+        height: 1200px;
+    }
+
+    .pvm{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 350px;
+    }
+
+    .section2{
+        height: 800px;      
+    }
+    .descrip1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .molino{
+        position: relative;
+        left: 5px;
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        text-align: center;
+    }
+    .molino-descrip{
+        font-size: 15px;
+        width: 400px;
+    }
+    .molino-photo{
+        position: relative;
+        top: 25px;
+    }
+
+
+    .section4{
+        position: relative;
+    }
+
+    .descrip2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 10000;
+    }
+
+    .seal{
+        position: relative;
+        display: flex;
+        align-items: center;
+        left: 80px;
+        font-size: 40px;
+        text-align: center;
+    }
+    .perps-descrip{
+        font-size: 15px;
+        position: relative;
+        top: 10px;
+        width: 400px;
+        height: 10000;
+    }
+    .molino-logo{
+        position: relative;
+        top: 25px;
+    }
+
+    .footbar{
+        position: relative;
+        top: 600px;
+    }
+    .icons{
+        width: 30%;
+        position: relative;
+        left: 35px;
+    }
+    .fb{
+        width: 40px;
+        height: 40px;
+    }
+    .yt{
+        width: 60px;
+        height: 50px;
+    }
+
+    .trunkline,.address{
+        font-size: 15px;
+    }
+}
