@@ -32,7 +32,7 @@ body{
 
 .section1{
     display: flex;
-    background-image: url(/photos/edited/8.png);
+    background-image: url(./photos/edited/8.png);
     background-size: cover;
     color:#9e1005;
     height: 450px;

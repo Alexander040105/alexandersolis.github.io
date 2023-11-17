@@ -16,7 +16,7 @@ body{
 
 .section0{
     display: flex;
-    background-image: url(/photos/edited/6.png);
+    background-image: url(./photos/edited/6.png);
     background-size: cover;
     color:white;
     height: 450px;

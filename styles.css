@@ -14,7 +14,7 @@ body{
 /*Section 1 and navbar styling*/
 .section1{
     display: flex;
-    background-image:url(/photos/edited/ior/7.png);
+    background-image:url(./photos/edited/ior/7.png);
     background-size: cover;
     color:#FCCF3B;
     height: 450px;
