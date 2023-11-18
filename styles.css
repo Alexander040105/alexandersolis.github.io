@@ -168,7 +168,6 @@ body{
 /*Section 2 stylings*/
 .section2{
     position: relative;
-    top: 25%;
     color: #9e1005;
     background-color: white;
     height: 130px;
@@ -185,7 +184,7 @@ body{
 
 .ccs{
     position: relative;
-    top: 25px;
+    top: 20px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -295,29 +294,6 @@ body{
     height: 65px;
 }
 
-/*
-.facebook-link{
-    position: relative;
-    top: 30px;
-    left: 3rem;  
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-}
-
-.facebook{
-    position: relative;
-    top: 45px;
-    left: 3rem;  
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-}
-
-.facebook-link:hover{
-    color: #FCCF3B;
-} */
-
 .ccs-logo{
     position: relative;
     top: 25px;
@@ -343,144 +319,3 @@ body{
 }
 
 
-
-@media (max-width: 800px){
-    /* navbar resize */
-    .toggle-button{
-        display: flex;
-    }
-    #menustate{
-        display: flex;
-        overflow: hidden;
-        opacity: 0;
-        z-index: 1;
-    }
-    .navbar-links ul{
-       display: none;
-       flex-direction: column;
-       align-items: center;
-       width: 100%;
-    }
-
-    #menustate:checked ~ nav :is(ul,.navbar-links){
-        display: flex;
-    }
-    #menustate:checked ~ div .section1{
-        margin: 100px;
-    }
-    .navbar-links li{
-       text-align: center;
-    }
-
-    .navbar-links li a{
-       display: flex;
-       left: -100;
-       text-align: center;
-       padding: .5rem 1rem;
-    }
-
-    .navbar{
-        flex-direction: column;
-    }
-
-    .navbar-links li a:hover{
-        background: #FCCF3B;
-        color: #710B03;
-    }
-
-
-    .section1{
-        height: 300px;
-    }
-    .headline{
-        position: relative;
-        top: 5px;
-        line-height: 40px;
-        font-size: 40px;
-    }
-    .subheader{
-        position: relative;
-        top: 2px;
-        font-size: 15px;
-        line-height: 20px;
-    }
-    .learn-more{
-        position: relative;
-        top: 10px;
-        width: 125px;
-        font-size: 15px; 
-    }
-
-    .learn-more:hover{
-        font-size: 15px;
-    }
-
-    .section2{
-        height: 200px;
-        
-    }
-    .ccs, .partners{
-        font-size: 35px;
-    }
-    .contents{
-        position: relative;
-        top: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .csHeader, .itHeader{
-        font-size: 25px;
-    }
-
-    .itContents{
-        position: relative;
-        top: 300px;
-    }
-    
-    .box1{
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .section3{
-        height: 450px;
-    }
-    .section4{
-        height: 450px;
-    }
-    .banner{
-        position: relative;
-        top: 1px;
-        left: 5%;
-        width: 450px;
-        height: 225px;
-    }
-
-    .banner2{
-        position: relative;
-        top: 10px;
-        width: 375px;
-        height: 125px;
-    }
-
-    .icons{
-        width: 30%;
-        position: relative;
-        left: 35px;
-    }
-    .fb{
-        width: 40px;
-        height: 40px;
-    }
-    .yt{
-        width: 60px;
-        height: 50px;
-    }
-    .trunkline,.address{
-        font-size: 15px;
-    }
-}
