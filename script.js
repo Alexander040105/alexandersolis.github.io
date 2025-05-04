@@ -206,3 +206,4 @@ document.addEventListener('DOMContentLoaded', function() {
     // Check on initial load
     setTimeout(animateProjectCards, 500);
 });
+
