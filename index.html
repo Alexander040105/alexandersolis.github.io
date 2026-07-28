@@ -3,222 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexander Jon S. Solis</title>
+    <title>Alexander Jon S. Solis | Computer Science Student &amp; Developer</title>
+    <meta name="description" content="Portfolio of Alexander Jon S. Solis, a computer science student and full-stack developer building data-driven web applications, AI-assisted tools, and environmental intelligence platforms.">
+    <meta name="author" content="Alexander Jon S. Solis">
+    <meta property="og:title" content="Alexander Jon S. Solis | Computer Science Student &amp; Developer">
+    <meta property="og:description" content="Portfolio of Alexander Jon S. Solis, a computer science student and full-stack developer.">
+    <meta property="og:image" content="https://alexander040105.github.io/alexandersolis.github.io/assets/SOLIS.png">
+    <meta property="og:url" content="https://alexander040105.github.io/alexandersolis.github.io/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alexander Jon S. Solis | Computer Science Student &amp; Developer">
+    <meta name="twitter:description" content="Portfolio of Alexander Jon S. Solis, a computer science student and full-stack developer.">
+    <meta name="twitter:image" content="https://alexander040105.github.io/alexandersolis.github.io/assets/SOLIS.png">
+    <link rel="canonical" href="https://alexander040105.github.io/alexandersolis.github.io/">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header>
         <div class="container">
-            <h1 class="logo">Jon Solis</h1>
-            <nav>
-                <ul class="nav-links">
+            <a class="logo" href="#home" aria-label="Go to homepage">Jon Solis</a>
+            <nav aria-label="Primary navigation">
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links" type="button">
+                    <span class="bar" aria-hidden="true"></span>
+                    <span class="bar" aria-hidden="true"></span>
+                    <span class="bar" aria-hidden="true"></span>
+                </button>
+                <ul class="nav-links" id="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <div class="hamburger">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
             </nav>
         </div>
     </header>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Hello, I'm <span class="highlight">Alexander Jon Solis</span></h1>
-                <h2>Computer Science Student</h2>
-                <p>Welcome to my portfolio showcasing my journey and projects in the world of computer science.</p>
-                <a href="#projects" class="btn">View My Work</a>
+    <main id="main-content">
+        <section id="home" class="hero" aria-labelledby="hero-heading">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-heading">Hello, I am <span class="highlight">Alexander Jon Solis</span></h1>
+                    <p class="hero-subtitle">Computer Science Student &amp; Full-Stack Developer</p>
+                    <p class="hero-lead">I build data-driven web applications that turn complex problems into clean, accessible, and performant user experiences.</p>
+                    <a href="#projects" class="btn">View My Work</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I am a passionate Computer Science student with hands-on experience in data analysis, web development, and graphic design. I enjoy tackling complex problems and building efficient, user-focused solutions.</p>
-                    <p>My academic background and work experience has sharpened my problem-solving abilities and given me a solid foundation in core computing principles. I'm particularly interested in full-stack development, artificial intelligence, and turning data into meaningful insights through analysis and visualization.</p>
-                    <a href="./Solis_Resume.pdf" class="btn" id="downloadBtn" target="_blank">Download Resume</a>
-                </div>
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <img src="./SOLIS.png" alt="">
+        <section id="about" class="about" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading" class="section-title">About Me</h2>
+                <article class="about-content">
+                    <div class="about-text">
+                        <p>I am a Computer Science student with hands-on experience in full-stack web development, data analysis, and AI-assisted tooling. I enjoy breaking down complex problems into reliable, maintainable systems and building interfaces that make data actionable.</p>
+                        <p>My work sits at the intersection of software engineering, data science, and environmental intelligence. I am particularly interested in building platforms that process real-world datasets, surface insights through interactive visualizations, and support better decision-making.</p>
+                        <a href="assets/Solis_Resume.pdf" class="btn" id="downloadBtn" target="_blank" rel="noopener noreferrer">Download Resume</a>
                     </div>
-                </div>
+                    <figure class="about-image">
+                        <img src="assets/SOLIS.png" alt="Portrait of Alexander Jon Solis, a computer science student and developer.">
+                    </figure>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-sort"></i></div>
-                    <h3>EDA Report for Lloyds Banking Group Job Simulation</h3>
-                    <p>Performed exploratory data analysis on customer churn data for Lloyds Banking Group, identifying key churn patterns, demographic trends, and behavioral insights to support strategic decision-making.</p>
-                    <a target="_blank" href="https://docs.google.com/document/d/1cu40Zpb6SCpGYf_gl8bLMehHO6hbnQy_PSR5WvmlLP8/edit?usp=sharing" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-chess-knight"></i></div>
-                    <h3>Analyzing Champion Performance at Worlds 2024</h3>
-                    <p>Analyzed League of Legends Worlds 2024 data to evaluate champion performance, identifying meta trends, win-rate patterns, and strategic picks across competitive matches.</p>
-                    <a target="_blank" href="https://www.kaggle.com/code/alexanderjonsolis/analyzing-champion-performance-at-worlds-2024" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-calculator"></i></div>
-                    <h3>AutumnAssets</h3>
-                    <p>A platform for managing your farm finances in Coral Island</p>
-                    <a target="_blank" href="https://autumnassets.netlify.app/" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-project-diagram"></i></div>
-                    <h3>A.R.P.S</h3>
-                    <p>Advanced Rock Paper and Scissors game built with C++ and Godot Engine</p>
-                    <a target="_blank" href="https://github.com/Alexander040105/arps-godot/" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-lock"></i></div>
-                    <h3>HHR Rice Corp. Brand Kit</h3>
-                    <p>Developed a complete brand kit for HHR Rice Corp., including logo design, typography, color palette, and visual guidelines to ensure consistent and professional brand identity.</p>
-                    <a target="_blank" href="https://hhr-brand-kit.my.canva.site/" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-                </div>
-                
-                <!--<div class="project-card">
-                    <div class="project-icon"><i class="fas fa-robot"></i></div>
-                    <h3>AI Chatbot</h3>
-                    <p>A custom-built AI cryptography chatbot using Ollama and Python Flask.</p>
-                    <a target="_blank" href="https://6f9d-180-190-134-19.ngrok-free.app" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-                </div> -->
+        <section id="projects" class="projects" aria-labelledby="projects-heading">
+            <div class="container">
+                <h2 id="projects-heading" class="section-title">Featured Projects</h2>
+                <ul class="projects-grid">
+                    <li class="project-item project-item--featured">
+                        <article class="project-card project-card--featured">
+                            <h3>LUMI</h3>
+                            <p class="project-tagline">Data-Driven Environmental Intelligence for Renewable Energy Decision Support</p>
+                            <figure class="project-figure">
+                                <img src="assets/LUMI.png" alt="LUMI dashboard interface showing renewable energy analytics for Philippine municipalities.">
+                            </figure>
+                            <p>LUMI is an AI-assisted environmental intelligence platform that helps users evaluate renewable energy potential for municipalities across the Philippines using real-world climate and environmental data. It combines data engineering, machine learning, geographic visualization, and retrieval-augmented AI to turn environmental data into actionable insights.</p>
+                            <ul class="tech-list" aria-label="LUMI technologies">
+                                <li>React</li>
+                                <li>Vite</li>
+                                <li>Tailwind CSS</li>
+                                <li>FastAPI</li>
+                                <li>PostgreSQL</li>
+                                <li>Google Gemini API</li>
+                                <li>LangChain</li>
+                                <li>FAISS</li>
+                                <li>Pandas</li>
+                                <li>XGBoost</li>
+                                <li>NASA POWER</li>
+                            </ul>
+                            <a class="project-link" href="https://github.com/Alexander040105/Lumi" target="_blank" rel="noopener noreferrer">View Repository <span aria-hidden="true">&rarr;</span></a>
+                        </article>
+                    </li>
+                    <li class="project-item">
+                        <article class="project-card">
+                            <div class="project-icon" aria-hidden="true"><i class="fas fa-sort"></i></div>
+                            <h3>EDA Report for Lloyds Banking Group</h3>
+                            <p>Exploratory data analysis on customer churn, identifying key patterns, demographic trends, and behavioral drivers to support strategic retention decisions.</p>
+                            <a class="project-link" href="https://docs.google.com/document/d/1cu40Zpb6SCpGYf_gl8bLMehHO6hbnQy_PSR5WvmlLP8/edit?usp=sharing" target="_blank" rel="noopener noreferrer">View Project <span aria-hidden="true">&rarr;</span></a>
+                        </article>
+                    </li>
+                    <li class="project-item">
+                        <article class="project-card">
+                            <div class="project-icon" aria-hidden="true"><i class="fas fa-chess-knight"></i></div>
+                            <h3>Champion Performance at Worlds 2024</h3>
+                            <p>Analyzed League of Legends Worlds 2024 data to evaluate champion performance, meta trends, win-rate patterns, and strategic picks across competitive matches.</p>
+                            <a class="project-link" href="https://www.kaggle.com/code/alexanderjonsolis/analyzing-champion-performance-at-worlds-2024" target="_blank" rel="noopener noreferrer">View Project <span aria-hidden="true">&rarr;</span></a>
+                        </article>
+                    </li>
+                    <li class="project-item">
+                        <article class="project-card">
+                            <h3>AutumnAssets</h3>
+                            <p class="project-tagline">Farm-finance tracker for Coral Island</p>
+                            <figure class="project-figure">
+                                <img src="assets/AUTUMNASSETS.png" alt="AutumnAssets user interface showing farm financial tracking in Coral Island.">
+                            </figure>
+                            <p>A focused tool for managing farm income, expenses, and crop planning in Coral Island, built to make in-game resource tracking simple and visual.</p>
+                            <ul class="tech-list" aria-label="AutumnAssets technologies">
+                                <li>Web</li>
+                                <li>UI/UX</li>
+                            </ul>
+                            <a class="project-link" href="https://autumnassets.netlify.app/" target="_blank" rel="noopener noreferrer">View Project <span aria-hidden="true">&rarr;</span></a>
+                        </article>
+                    </li>
+                    <li class="project-item">
+                        <article class="project-card">
+                            <div class="project-icon" aria-hidden="true"><i class="fas fa-project-diagram"></i></div>
+                            <h3>A.R.P.S</h3>
+                            <p>An advanced take on Rock-Paper-Scissors built with C++ and the Godot Engine, demonstrating game-state logic, AI opponents, and modular design.</p>
+                            <a class="project-link" href="https://github.com/Alexander040105/arps-godot/" target="_blank" rel="noopener noreferrer">View Project <span aria-hidden="true">&rarr;</span></a>
+                        </article>
+                    </li>
+                    <li class="project-item">
+                        <article class="project-card">
+                            <div class="project-icon" aria-hidden="true"><i class="fas fa-lock"></i></div>
+                            <h3>HHR Rice Corp. Brand Kit</h3>
+                            <p>Designed a complete brand identity including logo, typography, color palette, and visual guidelines to ensure consistent and professional market presence.</p>
+                            <a class="project-link" href="https://hhr-brand-kit.my.canva.site/" target="_blank" rel="noopener noreferrer">View Project <span aria-hidden="true">&rarr;</span></a>
+                        </article>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">My Skills</h2>
-            <div class="skills-content">
-                <div class="skill-category">
-                    <h3>Programming Languages and Other Technologies</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-name">Python</div>
-                            <!-- <div class="skill-bar">
-                                <div class="skill-level" style="width: 85%"></div>
-                            </div> --> 
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">JavaScript</div>
-                            <!-- <div class="skill-bar">
-                                <div class="skill-level" style="width: 90%"></div>
-                            </div> -->
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">Adobe Photoshop</div>
-                            <!-- <div class="skill-bar">
-                                <div class="skill-level" style="width: 75%"></div>
-                            </div> -->
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">Adobe Illustrator</div>
-                            <!-- <div class="skill-bar">
-                                <div class="skill-level" style="width: 80%"></div>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Areas of Expertise</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-name">Data Analysis</div>
-                            <!-- <div class="skill-bar">
-                                <div class="skill-level" style="width: 95%"></div>
-                            </div> -->
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">Full-Stack Web Development</div>
-                            <!-- <div class="skill-bar">
-                                <div class="skill-level" style="width: 85%"></div>
-                            </div> -->
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">Graphic Design</div>
-                            <!-- <div class="skill-bar">
-                                <div class="skill-level" style="width: 80%"></div>
-                            </div> -->
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">Animation</div>
-                            <!-- <div class="skill-bar">
-                                <div class="skill-level" style="width: 75%"></div>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
+        <section id="skills" class="skills" aria-labelledby="skills-heading">
+            <div class="container">
+                <h2 id="skills-heading" class="section-title">Skills &amp; Technologies</h2>
+                <ul class="skills-content">
+                    <li class="skill-category">
+                        <h3>Programming Languages and Other Technologies</h3>
+                        <ul class="skill-items">
+                            <li class="skill-item">Python</li>
+                            <li class="skill-item">JavaScript</li>
+                            <li class="skill-item">Adobe Photoshop</li>
+                            <li class="skill-item">Adobe Illustrator</li>
+                        </ul>
+                    </li>
+                    <li class="skill-category">
+                        <h3>Areas of Expertise</h3>
+                        <ul class="skill-items">
+                            <li class="skill-item">Data Analysis</li>
+                            <li class="skill-item">Full-Stack Web Development</li>
+                            <li class="skill-item">Graphic Design</li>
+                            <li class="skill-item">Animation</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:alexanderjonsolis0401@gmail.com">alexanderjonsolis0401@gmail.com</a>
+        <section id="contact" class="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading" class="section-title">Get In Touch</h2>
+                <address class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:alexanderjonsolis0401@gmail.com">alexanderjonsolis0401@gmail.com</a>
+                        </div>
+                        <div class="social-links" aria-label="Social profiles">
+                            <a class="social-link" href="https://github.com/Alexander040105" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                            <a class="social-link" href="https://linkedin.com/in/alexander-jon-solis-2162a727a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                            <a class="social-link" href="https://www.kaggle.com/alexanderjonsolis" target="_blank" rel="noopener noreferrer" aria-label="Kaggle"><i class="fab fa-kaggle" aria-hidden="true"></i></a>
+                            <a class="social-link" href="https://www.instagram.com/jonjonjonjonnn/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <p>+63947-393-3886</p>
-                    </div>
-                    <!-- <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Your Location</p>
-                    </div> -->
-                    <div class="social-links">
-                        <a href="https://github.com/Alexander040105" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com/in/alexander-jon-solis-2162a727a" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.kaggle.com/alexanderjonsolis" class="social-link" target="_blank"><i class="fab fa-kaggle"></i></a>
-                        <a href="https://www.instagram.com/jonjonjonjonnn/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <!-- <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" id="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Send Message</button>
-                </form> -->
+                </address>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
             <p>&copy; 2025 Alexander Jon S. Solis. All Rights Reserved.</p>
+            <p class="footer-tagline">Built with semantic HTML, accessible design, and clean code.</p>
         </div>
     </footer>
 
